@@ -167,7 +167,7 @@ There will be two levels of user for this site: Administrator and Reader.
 * Type "npm install typescript -g" (unless you already have Typescript installed)
 * Type "npm install -g @angular/cli@1.6.5" (unless you already have Angular installed)
   - If you're on a Mac and get an error: Type "brew upgrade node"
-* Type "npm install --save angular-2-dropdown-multiselect" <-------------------------------- Not sure if this is contained in Core or not ---------------
+* Type "npm install --save-dev angular-2-dropdown-multiselect" <-------------------------------- Not sure if this is contained in Core or not ---------------
 * Type "npm install"
 * Type "ng serve"
 * Point your browser to localhost:4200

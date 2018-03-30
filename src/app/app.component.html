@@ -29,7 +29,10 @@
     <!-- note that the !'s are conditionals that are NOT just so that I can see the selector's module content -->
       <div class="col-md-10" id="main">
         <div *ngIf="!article">
-          <app-article></app-article>
+
+          <!-- <app-article [myArticle] = "makeArticles()">{{myArticle.name}}</app-article> -->
+          <app-article>{{myArticle.name}}</app-article>
+
           <!-- <ul>
             <li>There'd be an article here</li>
           </ul> -->

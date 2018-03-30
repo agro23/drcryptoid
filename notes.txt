@@ -6,7 +6,7 @@ https://coursetro.com/posts/code/91/Angular-CryptoCurrency-Tutorial---Display-Ex
 
 2) Used for dashboard:
 
-https://www.genuitec.com/create-cryptocurrency-dashboard-angular/ (uses coinmarketcap.com)
+https://www.genuitec.com/create-cryptocurrency-dashboard-angular/ (uses coinmarketcap.com) <-- broken now!!!!
 
 NOTES:
 
@@ -30,3 +30,20 @@ get articles from here:
 https://hackernoon.com/top-10-blockchain-blogs-books-podcasts-51968de42168
 
 https://www.wired.com/story/guide-blockchain/
+
+https://blog.moneo.io/top-45-hashtags-use-blockchain-crypto-plus-42-top-influencers/
+
+https://www.linkedin.com/pulse/firebase-angular4-cryptocurrencies-brian-warner
+
+ @cryptonewsmag!
+https://cryptocurrencynews.com/ceo-series/bethereum-ceo-ico/ …
+#cryptocurrency #CryptoSummit #cryptonews #ICO #preICO #TokenSale #presale #blockchain #bitcoin #reddit #Bitcointalk #Ethereum #ERC20 $ETH $BTC
+
+https://developer.twitter.com/en/docs/api-reference-index
+https://blog.twitter.com/developer/en_us/a/2014/rendering-tweets-with-angularjs-and-nodejs.html
+My App : https://apps.twitter.com/app/15014217 for API data
+
+
+BLOGGING
+https://hub.packtpub.com/writing-blog-application-nodejs-and-angularjs/
+https://github.com/collective/tutorial-blog-angular2
