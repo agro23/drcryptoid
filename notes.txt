@@ -1,0 +1,13 @@
+use this tutorial:
+https://angular.io/tutorial
+
+1) Used for price lookup:
+https://coursetro.com/posts/code/91/Angular-CryptoCurrency-Tutorial---Display-Exchange-Data-with-an-API
+
+2) Used for dashboard:
+
+https://www.genuitec.com/create-cryptocurrency-dashboard-angular/
+
+NOTES:
+
+https://rishabh.io/misc/how-to-build-a-simple-cryptocurrency-app-using-angular4-expressjs-and-coinbase-api.html

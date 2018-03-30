@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { DataService } from './data.service';         // Add this for crypto lookup
+import { HttpClientModule } from '@angular/common/http';    // Add this for crypto lookup
+
 
 import { AppComponent } from './app.component';
 import { ReaderComponent } from './reader/reader.component';
@@ -24,9 +27,10 @@ import { LookupComponent } from './lookup/lookup.component';
     LookupComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

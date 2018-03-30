@@ -108,6 +108,12 @@ There will be two levels of user for this site: Administrator and Reader.
 
 . . .
 
+* Add price lookup to app.component (1)
+
+* Move price lookup code to its own component
+
+* Add more coins to lookup
+
 * Pretty up the UI
 
 * Refactor code as needed.
