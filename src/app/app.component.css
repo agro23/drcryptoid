@@ -1,0 +1,14 @@
+
+
+#main {
+  max-width: 1250px;
+  min-width: 350px;
+  border: 5px red solid;
+}
+
+#sidebar {
+  /*min-width: 250px;*/
+  /*max-width: 350px;*/
+  border: 5px black solid;
+  margin: auto;
+}

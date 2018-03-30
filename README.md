@@ -96,6 +96,8 @@ There will be two levels of user for this site: Administrator and Reader.
 
 * Display articles to the top page
 
+* Create Admin login
+
 
 . . .
 

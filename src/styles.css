@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: lightgray;
+}
+
+.well {
+    margin: 0;
+    padding: 5px;
+    max-width: 1050px;
+}
