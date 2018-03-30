@@ -47,7 +47,7 @@ Once I have built out the basic structure of my application and separated the co
 There will be two levels of user for this site: Administrator and Reader.
 
 **READER**
-* A Reader can see detailed articles headlines and a lead paragraph sample about crypto currencies, read them, and open a window linking to them on their host.
+* A Reader can see detailed article headlines and a lead paragraph sample about crypto currencies, read them, and open a window linking to them on their host.
 
 * A Reader can see blog article post headlines and a lead paragraph sample on the top pages
 
@@ -150,6 +150,8 @@ There will be two levels of user for this site: Administrator and Reader.
 * Type "npm init" and run through the package.json file filling in details as needed
 * Navigate to node_modules/.bin/ and type "jasmine init"
 * Navigate back to the project's root directory
+* Type "npm install ngtweet --save-dev" if you don't have it installed already
+* Type "bower install ngtweet"
 * Type "npm install dotenv-webpack --save-dev" to process environment variables (if you don't have Dotenv installed).
 * Type "npm install typescript -g" (unless you already have Typescript installed)
 * Type "npm install -g @angular/cli@1.6.5" (unless you already have Angular installed)
