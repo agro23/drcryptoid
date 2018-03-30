@@ -4,7 +4,7 @@
       <!-- Welcome to {{ title }}! -->
       <app-header></app-header>
     </h1>
-      
+
       <div *ngIf="cryptos">
         <div id="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
           <span class="left">{{ crypto }}</span>
@@ -14,6 +14,16 @@
 
 
   </div>
+
+  <div class="container">
+  	<div class="row">
+  		<div class="col-sm-6 col-sm-offset-3">
+  			<h2 class="text-center">{{ title }}</h2>
+  			<app-dashboard></app-dashboard>
+  		</div>
+  	</div>
+  </div>
+
   <div class="container well">
     <div class="row">
     <!-- note that the !'s are conditionals that are NOT just so that I can see the selector's module content -->

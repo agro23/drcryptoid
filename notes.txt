@@ -6,8 +6,27 @@ https://coursetro.com/posts/code/91/Angular-CryptoCurrency-Tutorial---Display-Ex
 
 2) Used for dashboard:
 
-https://www.genuitec.com/create-cryptocurrency-dashboard-angular/
+https://www.genuitec.com/create-cryptocurrency-dashboard-angular/ (uses coinmarketcap.com)
 
 NOTES:
 
 https://rishabh.io/misc/how-to-build-a-simple-cryptocurrency-app-using-angular4-expressjs-and-coinbase-api.html
+
+
+3) Maybe some useful info:
+https://www.dunebook.com/create-cryptocurrency-dashboard-angular/
+
+
+read this:
+https://www.linkedin.com/pulse/firebase-angular4-cryptocurrencies-brian-warner
+
+ticker api data is here:
+https://coinmarketcap.com/api/
+
+Have to read it and list the price myself. Not sure how to do the animations yet.
+
+
+get articles from here:
+https://hackernoon.com/top-10-blockchain-blogs-books-podcasts-51968de42168
+
+https://www.wired.com/story/guide-blockchain/

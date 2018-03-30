@@ -108,9 +108,13 @@ There will be two levels of user for this site: Administrator and Reader.
 
 . . .
 
-* Add price lookup to app.component (1)
+* Add startedtic price lookup to app.component (1)
 
-* Move price lookup code to its own component
+* Move static price lookup code to its own component
+
+* Add drop down coin lookup menu
+
+* Pretty up the drop down and related stuff
 
 * Add more coins to lookup
 
@@ -156,12 +160,14 @@ There will be two levels of user for this site: Administrator and Reader.
 * Type "npm init" and run through the package.json file filling in details as needed
 * Navigate to node_modules/.bin/ and type "jasmine init"
 * Navigate back to the project's root directory
-* Type "npm install ngtweet --save-dev" if you don't have it installed already
-* Type "bower install ngtweet"
+
+* Type "npm install ngtweet --save-dev" if you don't have it installed already <-------------------------------------------------------------------------
+* Type "bower install ngtweet" <-------------------------------------------------------------------------------------------------------------------------
 * Type "npm install dotenv-webpack --save-dev" to process environment variables (if you don't have Dotenv installed).
 * Type "npm install typescript -g" (unless you already have Typescript installed)
 * Type "npm install -g @angular/cli@1.6.5" (unless you already have Angular installed)
   - If you're on a Mac and get an error: Type "brew upgrade node"
+* Type "npm install --save angular-2-dropdown-multiselect" <-------------------------------- Not sure if this is contained in Core or not ---------------
 * Type "npm install"
 * Type "ng serve"
 * Point your browser to localhost:4200
