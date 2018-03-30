@@ -7,6 +7,7 @@ An Angular application rendering a cryptocurrency-focused news blog and forum.
 
 ## Rules
 **Site Rebuild**
+
 We're almost 75% of the way through Epicodus (not including our internship) and it's time to start building more portfolio pieces!
 
 Over the next two weeks, we'll rebuild a site of your choice using Angular, as described in the Code Review Prep: Rebuilding a Site with Angular lesson from earlier this week. Refer back to this lesson for more details, and an explanation of how the project will be evaluated.
@@ -17,6 +18,7 @@ Today, I will focus on planning your application and building and separating you
 I am NOT rebuilding a site per se but rather following a common design pattern of similar sorts of blog sites with active components. The advantage here is that while learning on the job programming the site I am also not carrying the same amount of overhead that a full-fledged CMS like Wordpress brings with it and I will have more control of my components.
 
 **Building Out The Application**
+
 Once I have built out the basic structure of my application and separated the code into working components, I'll consider adding:
 
 1) More directives (practice with ngIf, ngFor, and more).
@@ -32,7 +34,9 @@ Once I have built out the basic structure of my application and separated the co
 11) Tests using Jasmine and Protractor.
 
 **Objectives**
+
 *The project will be reviewed on the following objectives:*
+
 1) Project includes a detailed README with information on all completed features as well as features to be added.
 
 2) Project includes a detailed commit history that clearly shows at least eight hours of work between 8 and 5 on Friday. You are also welcome to put additional work into your project outside of that time frame.
@@ -92,12 +96,15 @@ There will be two levels of user for this site: Administrator and Reader.
 
 * 'Forum' component created and functional
 
+* Hard code Lorem Ipsum blog posts and
+
 * Display blog posts to the top page
 
 * Display articles to the top page
 
 * Create Admin login
 
+* Implement keyword search of articles
 
 . . .
 
