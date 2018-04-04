@@ -133,6 +133,7 @@ There will be two levels of user for this site: Administrator and Reader.
 * Typescript/Javascript
 * Node
 * Angular
+* Firebase
 
 ## Dependencies and plugins
 
@@ -154,7 +155,7 @@ There will be two levels of user for this site: Administrator and Reader.
 * typescript
 
 ## Setup/Installation Requirements
-* Download the project from the repository https://github.com/
+* Download the project from the repository https://github.com/agro23/drcryptoid
 * Install and initialize (init -y) Node (if it isn't already)
 * Navigate to your root project directory
 * Type "npm init" and run through the package.json file filling in details as needed
@@ -168,6 +169,8 @@ There will be two levels of user for this site: Administrator and Reader.
 * Type "npm install -g @angular/cli@1.6.5" (unless you already have Angular installed)
   - If you're on a Mac and get an error: Type "brew upgrade node"
 * Type "npm install --save-dev angular-2-dropdown-multiselect" <-------------------------------- Not sure if this is contained in Core or not ---------------
+* Type "npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save" to add firebase if you don't have it. 
+  - The app's key will be provided in a separate file.
 * Type "npm install"
 * Type "ng serve"
 * Point your browser to localhost:4200
