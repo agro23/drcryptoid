@@ -171,6 +171,8 @@ There will be two levels of user for this site: Administrator and Reader.
 * Type "npm install --save-dev angular-2-dropdown-multiselect" <-------------------------------- Not sure if this is contained in Core or not ---------------
 * Type "npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save" to add firebase if you don't have it. 
   - The app's key will be provided in a separate file.
+* Add: ",
+    "types": [ "firebase" ]" to the end of your tsconfig.json file if it's not in there.
 * Type "npm install"
 * Type "ng serve"
 * Point your browser to localhost:4200
