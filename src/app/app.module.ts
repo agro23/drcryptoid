@@ -12,7 +12,6 @@ import { ReaderComponent } from './reader/reader.component';
 import { AdminComponent } from './admin/admin.component';
 import { ArticleComponent } from './article/article.component';
 import { ForumComponent } from './forum/forum.component';
-import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { LookupComponent } from './lookup/lookup.component';
 import { SearchFilterComponent } from './search-filter/search-filter.component';
@@ -28,7 +27,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AdminComponent,
     ArticleComponent,
     ForumComponent,
-    HeaderComponent,
     SearchComponent,
     LookupComponent,
     SearchFilterComponent,

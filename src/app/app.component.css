@@ -15,8 +15,9 @@
 }
 
 div#crypto-container {
+    float: right;
     background:white;
-    width: 70%;
+    width: 350px;
     margin: 0 auto 4px auto;
     padding: 1em;
     box-shadow: 1px 1px 0 lightgrey;

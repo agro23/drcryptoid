@@ -1,28 +1,28 @@
 <div class="container">
   <div style="text-align:center jumbotron"> <!-- app header -->
     <h1>
-      <!-- Welcome to {{ title }}! -->
-      <app-header></app-header>
+      Welcome to {{ title }}!
     </h1>
+  </div>
 
-      <div *ngIf="cryptos">
+      <!-- <div *ngIf="cryptos">
         <div id="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
           <span class="left">{{ crypto }}</span>
           <span class="right">{{ cryptos[crypto].USD | currency:'USD':true}}</span>
         </div>
-      </div>
+      </div> -->
 
 
-  </div>
 
-  <div class="container">
+
+  <!-- <div class="container">
   	<div class="row">
   		<div class="col-sm-6 col-sm-offset-3">
   			<h2 class="text-center">{{ title }}</h2>
   			<app-dashboard></app-dashboard>
   		</div>
   	</div>
-  </div>
+  </div> -->
 
   <div class="container well">
     <div class="row">
@@ -31,7 +31,7 @@
         <div *ngIf="!article">
 
           <!-- <app-article [myArticle] = "makeArticles()">{{myArticle.name}}</app-article> -->
-          <app-article>{{myArticle.name}}</app-article>
+          <app-article></app-article>
 
           <!-- <ul>
             <li>There'd be an article here</li>

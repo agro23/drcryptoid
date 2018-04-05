@@ -108,6 +108,8 @@ There will be two levels of user for this site: Administrator and Reader.
 
 . . .
 
+* Implement links to sites like https://www.newsbtc.com/2018/04/05/asian-altcoin-trading-roundup-top-cryptocurrency-ontology/
+
 * Add startedtic price lookup to app.component (1)
 
 * Move static price lookup code to its own component
@@ -169,8 +171,8 @@ There will be two levels of user for this site: Administrator and Reader.
 * Type "npm install -g @angular/cli@1.6.5" (unless you already have Angular installed)
   - If you're on a Mac and get an error: Type "brew upgrade node"
 * Type "npm install --save-dev angular-2-dropdown-multiselect" <-------------------------------- Not sure if this is contained in Core or not ---------------
-* Type "npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save" to add firebase if you don't have it. 
-  - The app's key will be provided in a separate file.
+* Type "npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save" to add firebase if you don't have it.
+  - The app's key will be provided in a separate file (OR YOU WILL HAVE TO GET YOUR OWN!).<----------------------
 * Add: ",
     "types": [ "firebase" ]" to the end of your tsconfig.json file if it's not in there.
 * Type "npm install"
