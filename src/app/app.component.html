@@ -27,10 +27,13 @@
       <p class="votes">{{article.upvotes}}UPIMAGE | {{article.downvotes}}DOWNIMAGE</p>
       <div *ngIf="currentRoute === '/admin'">
         <!-- this will be if logged in as admin -->
-        {{article.description}}
+        {{article.name}}
         PREPARE TO CHANGE ROUTING FOR ARTICLE EDIT
+        THIS DIV MAY NOT EVEN EXIST
+        EDITING WILL BE ON ARTICLE DETAILS PAGE
         <hr>
-        <app-edit-article [selectedArticle]="article"></app-edit-article>
+        <!-- <app-edit-article [selectedArticle]="article"></app-edit-article> -->
+
       </div>
     </div>
   </div>

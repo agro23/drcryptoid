@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { NgForm } from '@angular/forms';
 import { DataService } from './data.service';         // Add this for crypto lookup
 import { HttpClientModule } from '@angular/common/http';    // Add this for crypto lookup
 import { FormsModule } from '@angular/forms';
@@ -19,6 +19,12 @@ import { ListCardComponent } from './list-card/list-card.component';
 import { ListComponent } from './list/list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
