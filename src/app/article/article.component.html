@@ -7,18 +7,25 @@
       <p class="ledeStyle">article.lede</p>
       <p class="articleStyle">ARTICLE WILL BE ON ITS OWN DETAIL PAGE</p>
       <p class="votes">article.upvotesUPIMAGE | article.downvotesDOWNIMAGE</p>
-      <div *ngIf="currentRoute === '/admin'">
-        <!-- this will be if logged in as admin -->
+
+      <!-- this will be if logged in as admin -->
+      <!-- <div *ngIf="currentRoute === '/admin'">
         {{article.name}}
         PREPARE TO CHANGE ROUTING FOR ARTICLE EDIT
         THIS DIV MAY NOT EVEN EXIST
         EDITING WILL BE ON ARTICLE DETAILS PAGE
         <hr>
-        <!-- <app-edit-article [selectedArticle]="article"></app-edit-article> -->
+      </div> -->
+      <!-- <app-edit-article [selectedArticle]="article"></app-edit-article> -->
 
-      </div>
     </div>
-  
+
+    <div *ngFor="let article of myArticles"><!--how can I make this scroll?-->
+      <p>{{article.name}}</p>
+      <p>{{article.lede}}</p>
+      <br>
+    </div>
+
   </div>
   <!-- Note: Tweet IDs should be represented as strings in order to maintain precision
   <div ng-repeat="tweetID in tweetIDs track by $index">
