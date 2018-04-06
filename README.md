@@ -47,11 +47,11 @@ Once I have built out the basic structure of my application and separated the co
 There will be two levels of user for this site: Administrator and Reader.
 
 **READER**
-* A Reader can see detailed article headlines and a lead paragraph sample about crypto currencies, read them, and open a window linking to them on their host.
+* A Reader can see detailed article headlines and a lead paragraph sample about crypto currencies, read them, and open a window linking to the original on their host.
 
 * A Reader can see blog article post headlines and a lead paragraph sample on the top pages
 
-* A Reader can click on an article and that article will expand on the page to be read and then optionally closed
+* A Reader can click on an article and that article will expand on the page to be read and then optionally closed (can it scroll?)
 
 * A Reader can search the site's articles for keywords
 
@@ -82,12 +82,13 @@ There will be two levels of user for this site: Administrator and Reader.
 This project has been reconfigured due to my new ability to use firebase for data persistence.
 The project is divided into sections:
 1) The articles
-  * 1a) Admin level and rights
-  * 2a) User level and rights
 2) The comments
 3) The widgets
 4) Authorization and login stuff
 5) The forum
+6) Authorization and login
+* 1a) Admin level and rights
+* 2a) User level and rights
 
 Then I will refactor and make it look pretty.
 
@@ -100,6 +101,29 @@ Then I will refactor and make it look pretty.
 * database created and functioning
 
 * Article Service created
+
+* Router implemented
+
+* About component created
+
+* About page routes to top page
+
+* Articles removed from app.component.html and article "top page" created
+
+
+* Top page shows mock articles from Article component for now. <-- 
+
+* Database modified to hold article structure
+
+* Mock articles uploaded to db
+
+* Articles displayed correctly
+
+* Articles can be created (Admin level assumed)
+
+* Articles can be edited (Admin level assumed)
+
+* Articles can be deleted (Admin level assumed)
 
 
 

@@ -2,6 +2,8 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
+import { ArticleComponent }   from './article/article.component';
+
 // // import { MarketplaceComponent }   from './marketplace/marketplace.component';
 // import { ArticlemDetailComponent }   from './album-detail/album-detail.component';
 // import { TradeComponent }   from './trade/trade.component';
@@ -9,19 +11,19 @@ import { AboutComponent }   from './about/about.component';
 
 
 const appRoutes: Routes = [
-  // {
-  //   path: '',
-  //   component: AppComponent
-  // },
+  {
+    path: '',
+    component: ArticleComponent
+  },
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'article',
+    component: ArticleComponent
   }
-  //,
-  // {
-  //   path: 'marketplace',
-  //   component: MarketplaceComponent
-  // },
+  // ,
   // {
   // path: 'albums/:id',
   // component: AlbumDetailComponent

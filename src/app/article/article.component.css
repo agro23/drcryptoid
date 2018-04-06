@@ -1,0 +1,47 @@
+selectedArticle:hover {
+  cursor: grab;
+  display: inline;
+}
+
+.panel:hover{
+  background-color: lightgray;
+}
+
+.ledeStyle{
+  background-color: red;
+}
+
+.articleStyle {
+  background-color: chartreuse
+}
+
+#main {
+  margin: auto;
+  max-width: 1250px;
+  min-width: 350px;
+  border: 5px red solid;
+}
+
+#sidebar {
+  /*min-width: 250px;*/
+  /*max-width: 350px;*/
+  border: 5px black solid;
+  margin: auto;
+}
+
+div#crypto-container {
+    float: right;
+    background:white;
+    width: 350px;
+    margin: 0 auto 4px auto;
+    padding: 1em;
+    box-shadow: 1px 1px 0 lightgrey;
+  }
+
+  span.left {
+    font-weight: bold;
+  }
+
+  span.right {
+    float:right;
+  }

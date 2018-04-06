@@ -18,7 +18,7 @@
   </div><!-- end jumbotron-->
 
   <!--div *ngFor="let album of albums | async" class="panel panel-default"/div-->
-  <div>
+  <!-- <div>
     <div class="panel-body" class="selectedArticle">
       <h3 (click)="goToArticleDetailPage(album)" ><em>article.articleHeader</em> by article.author</h3>
       <h4>article.uploadDate</h4>
@@ -27,16 +27,16 @@
       <p class="votes">article.upvotesUPIMAGE | article.downvotesDOWNIMAGE</p>
       <div *ngIf="currentRoute === '/admin'">
         <!-- this will be if logged in as admin -->
-        {{article.name}}
+        <!-- {{article.name}}
         PREPARE TO CHANGE ROUTING FOR ARTICLE EDIT
         THIS DIV MAY NOT EVEN EXIST
         EDITING WILL BE ON ARTICLE DETAILS PAGE
-        <hr>
+        <hr> -->
         <!-- <app-edit-article [selectedArticle]="article"></app-edit-article> -->
-
+<!--
       </div>
     </div>
-  </div>
+  </div> -->
       <!-- <div *ngIf="cryptos">
         <div id="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
           <span class="left">{{ crypto }}</span>
@@ -53,17 +53,17 @@
   	</div>
   </div> -->
 
-  <div class="container well">
-    <div class="row">
+  <!-- <div class="container well">
+    <div class="row"> -->
     <!-- note that the !'s are conditionals that are NOT just so that I can see the selector's module content -->
-      <div class="col-md-10" id="main">
-        <div *ngIf="!article">
+      <!-- <div class="col-md-10" id="main">
+        <div *ngIf="!article"> -->
           <!-- <app-article [myArticle] = "makeArticles()">{{myArticle.name}}</app-article> -->
-          <app-article></app-article>
+          <!-- <app-article></app-article> -->
           <!-- <ul>
             <li>There'd be an article here</li>
           </ul> -->
-        </div>
+        <!-- </div>
         <app-forum></app-forum>
       </div>
       <div class="col-md-2" id="sidebar">
@@ -77,10 +77,7 @@
         <app-search></app-search>
       </div>
     </div>
-  </div>
+  </div> -->
 
+  <router-outlet></router-outlet>
 </div>
-
-
-
-<router-outlet></router-outlet>
