@@ -110,8 +110,11 @@ Then I will refactor and make it look pretty.
 
 * Articles removed from app.component.html and article "top page" created
 
+* Top page shows mock articles from Article component for now.
 
-* Top page shows mock articles from Article component for now. <-- 
+* User can link from title and lede on top page to a page for the article and back <--
+
+
 
 * Database modified to hold article structure
 
@@ -125,9 +128,19 @@ Then I will refactor and make it look pretty.
 
 * Articles can be deleted (Admin level assumed)
 
+* Articles show upvotes and downvotes
 
+* Articles can have comments added
 
+* Article upvoting increments and decrements voting as needed
 
+* Create User model with privileges
+
+* Create user/admin login authorization
+
+* CRUD tasks, comments and voting are limited by user Level.
+
+==== OLD STUFF BELOW ====
 * 'Reader' Model created and functional
 
 * 'Reader' component created and functional

@@ -1,12 +1,11 @@
-<p>article works!</p>
-<p>Articles go here<p>
+
   <div>
     <div class="panel-body" class="selectedArticle">
-      <h3 (click)="goToArticleDetailPage(album)" ><em>article.articleHeader</em> by article.author</h3>
+      <!-- <h3 (click)="goToArticleDetailPage(album)" ><em>article.articleHeader</em> by article.author</h3>
       <h4>article.uploadDate</h4>
       <p class="ledeStyle">article.lede</p>
       <p class="articleStyle">ARTICLE WILL BE ON ITS OWN DETAIL PAGE</p>
-      <p class="votes">article.upvotesUPIMAGE | article.downvotesDOWNIMAGE</p>
+      <p class="votes">article.upvotesUPIMAGE | article.downvotesDOWNIMAGE</p> -->
 
       <!-- this will be if logged in as admin -->
       <!-- <div *ngIf="currentRoute === '/admin'">
@@ -21,8 +20,9 @@
     </div>
 
     <div *ngFor="let article of myArticles"><!--how can I make this scroll?-->
-      <p>{{article.name}}</p>
+      <h3 (click)="goToArticleDetailPage(article)">{{article.name}}</h3>
       <p>{{article.lede}}</p>
+      <p>Upvotes: {{article.upvotes}} | Downvotes: {{article.downvotes}}
       <br>
     </div>
 

@@ -23,6 +23,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AboutComponent } from './about/about.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 
 export const firebaseConfig = {
@@ -45,7 +46,8 @@ export const firebaseConfig = {
     ListCardComponent,
     ListComponent,
     DashboardComponent,
-    AboutComponent
+    AboutComponent,
+    ArticleDetailComponent
   ],
   imports: [
     BrowserModule,
