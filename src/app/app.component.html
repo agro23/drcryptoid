@@ -1,8 +1,38 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Epicodus Tunes</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="about">About</a></li>
+      <li><a routerLink="login">Login</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container">
   <div style="text-align:center jumbotron"> <!-- app header -->
     <h1>
-      Welcome to {{ title }}!
+      {{ title }}!
     </h1>
+  </div><!-- end jumbotron-->
+
+  <!--div *ngFor="let album of albums | async" class="panel panel-default"/div-->
+  <div>
+    <div class="panel-body" class="selectedArticle">
+      <h3 (click)="goToArticleDetailPage(album)" ><em>{{article.articleHeader}}</em> by {{article.author}}</h3>
+      <h4>{{article.uploadDate}}</h4>
+      <p class="ledeStyle">{{article.lede}}</p>
+      <p class="articleStyle">ARTICLE WILL BE ON ITS OWN DETAIL PAGE</p>
+      <p class="votes">{{article.upvotes}}UPIMAGE | {{article.downvotes}}DOWNIMAGE</p>
+      <div *ngIf="currentRoute === '/admin'">
+        <!-- this will be if logged in as admin -->
+        {{article.description}}
+        PREPARE TO CHANGE ROUTING FOR ARTICLE EDIT
+        <hr>
+        <app-edit-article [selectedArticle]="article"></app-edit-article>
+      </div>
+    </div>
   </div>
 
       <!-- <div *ngIf="cryptos">
@@ -11,9 +41,6 @@
           <span class="right">{{ cryptos[crypto].USD | currency:'USD':true}}</span>
         </div>
       </div> -->
-
-
-
 
   <!-- <div class="container">
   	<div class="row">
@@ -29,10 +56,8 @@
     <!-- note that the !'s are conditionals that are NOT just so that I can see the selector's module content -->
       <div class="col-md-10" id="main">
         <div *ngIf="!article">
-
           <!-- <app-article [myArticle] = "makeArticles()">{{myArticle.name}}</app-article> -->
           <app-article></app-article>
-
           <!-- <ul>
             <li>There'd be an article here</li>
           </ul> -->
@@ -47,11 +72,9 @@
           <app-reader></app-reader>
         </div>
         <app-lookup></app-lookup>
-
-
-
         <app-search></app-search>
       </div>
     </div>
   </div>
+
 </div>

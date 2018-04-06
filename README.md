@@ -81,10 +81,13 @@ There will be two levels of user for this site: Administrator and Reader.
 **Ignoring all previous specs**
 This project has been reconfigured due to my new ability to use firebase for data persistence.
 The project is divided into sections:
-- 1) The articles
-- 2) The comments
-- 3) The widgets
-- 4) The forum
+1) The articles
+  * 1a) Admin level and rights
+  * 2a) User level and rights
+2) The comments
+3) The widgets
+4) Authorization and login stuff
+5) The forum
 
 Then I will refactor and make it look pretty.
 
@@ -181,7 +184,7 @@ Then I will refactor and make it look pretty.
 * Type "bower install ngtweet" <-------------------------------------------------------------------------------------------------------------------------
 * Type "npm install dotenv-webpack --save-dev" to process environment variables (if you don't have Dotenv installed).
 * Type "npm install typescript -g" (unless you already have Typescript installed)
-* Type "npm install -g @angular/cli@1.6.5" (unless you already have Angular installed)
+* Type "npm install -g @angular/cli@1.6.5 --save" (unless you already have Angular installed)
   - If you're on a Mac and get an error: Type "brew upgrade node"
 * Type "npm install --save-dev angular-2-dropdown-multiselect" <-------------------------------- Not sure if this is contained in Core or not ---------------
 * Type "npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save" to add firebase if you don't have it.
@@ -193,7 +196,7 @@ Then I will refactor and make it look pretty.
 * Point your browser to localhost:4200
 
 ## Future expansion
-I'd like to be able to add more market data about cryptos and also let users navigate some custom forecasting tools and apply formulae to their chosen crypto. I'd also like to have a "portfolio" section where they can gauge the value of their cryptos and maybe make informed decisions about when to buy and sell. Also, it would be neat if the site could grab articles about cryptocurrencies from the internet periodically and post them to the front page, functionally indistinguishable from blog posts and other linked articles
+I'd like to enable forums and maybe separate articles from forum posts. It would be nice to have the crypto widgets working right. I'd also like to be able to add more market data about cryptos and also let users navigate some custom forecasting tools and apply formulae to their chosen crypto. I'd also like to have a "portfolio" section where they can gauge the value of their cryptos and maybe make informed decisions about when to buy and sell. Also, it would be neat if the site could grab articles about cryptocurrencies from the internet periodically and post them to the front page, functionally indistinguishable from blog posts and other linked articles
 
 ## Known Bugs and Issues
 

@@ -1,4 +1,21 @@
 
+.selectedArticle:hover {
+  cursor: grab;
+  display: inline;
+}
+
+.panel:hover{
+  background-color: lightgray;
+}
+
+.ledeStyle{
+  background-color: red;
+}
+
+.articleStyle {
+  background-color: chartreuse
+}
+
 
 #main {
   margin: auto;

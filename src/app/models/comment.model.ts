@@ -1,4 +1,4 @@
-export class Article {
+export class Comment {
   public artAssets: Object [];
 
   constructor (

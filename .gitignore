@@ -38,8 +38,11 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
-# Unnecessary Bower
+# Unnecessary Bower (if I even use those widgets)
 /bower_components/*
+
+#Firebase credentials
+/src/app/api-keys.ts
 
 # System Files
 .DS_Store
