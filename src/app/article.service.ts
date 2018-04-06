@@ -4,10 +4,11 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class ArticleService {
-  articles: FirebaseListObservable<any[]>;
+  // articles: FirebaseListObservable<any[]>; FIX FOR FIREBASE
+  articles: Article[];
 
     constructor(private database: AngularFireDatabase) {
-      this.articles = database.list('articles');
+      // this.articles = database.list('articles');
     }
 
       getArticles() {
@@ -19,9 +20,13 @@ export class ArticleService {
           this.articles.push(newArticle);
       }
 
-      getArticleById(articleId: string){
+      getArticleById(articleId: number){
         return this.database.object('articles/' + articleId);
         }
+
+      // getArticleById(articleId: string){
+      //   return this.database.object('articles/' + articleId);
+      //   }
 
       // updateArticle(localUpdatedArticle){
       // HAVE TO UPDATE ALL FIELDS

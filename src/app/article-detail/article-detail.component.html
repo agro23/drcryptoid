@@ -1,3 +1,38 @@
-<p>
-  article-detail works!
-</p>
+<div>
+  <!-- <h3>{{(articleToDisplay | async)?.name}}</h3>
+  <h4>{{(articleToDisplay | async)?.author}}</h4>
+  <p>{{(articleToDisplay | async)?.upLoadDate}}</p>
+  <p>{{(articleToDisplay | async)?.bodyCopy}}</p>
+  <p>{{(articleToDisplay | async)?.upvotes}} | {{(articleToDisplay | async)?.downvotes}}</p>
+  <p>{{(articleToDisplay | async)?.comments}}</p> -->
+
+
+  <h3>{{articleToDisplay.name}}</h3>
+  <h4>{{articleToDisplay.author}}</h4>
+  <p>{{articleToDisplay.upLoadDate}}</p>
+  <p>{{articleToDisplay.bodyCopy}}</p>
+  <p>{{articleToDisplay.upvotes}} | {{articleToDisplay.downvotes}}</p>
+  <p>{{articleToDisplay.comments}}</p>
+
+  <!-- <h3>{{albumToDisplay.title}}</h3>
+  <h4>{{albumToDisplay.artist}}</h4>
+  <p>{{albumToDisplay.description}}</p> -->
+  <a (click)="goBackToTop()">back</a>
+  <!-- <button class="btn btn-info" onclick="location.href = '/marketplace';">Go back</button> -->
+</div>
+
+<!-- public id: number,
+public name: string,
+public author: string,
+public level: string,
+public rights: string,
+public uploadDate: string,
+public articleHeader: string,
+public lede: string,
+public bodyCopy: string,
+public link: string,
+public keywords: string[],
+public comments: Article[],
+public upvotes: number,
+public downvotes: number,
+public target: string -->

@@ -14,6 +14,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class ArticleComponent implements OnInit {
   articleId: string;
   articleToDisplay;
+  articles: Article[];
   // myArticles: Article[];
 
 
@@ -74,6 +75,9 @@ export class ArticleComponent implements OnInit {
       this.myArticles[i].id = i;
       console.log("i = " + i + " myArticles[i].id is " + this.myArticles[i].id);
     }
+
+    this.articles = this.articleService.getArticles();
+
   }
 
   goToArticleDetailPage(clickedArticle) {

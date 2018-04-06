@@ -12,7 +12,9 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [ArticleService]
 })
 export class ArticleDetailComponent implements OnInit {
-  articleId: string;
+  // articleId: string;
+  articleId: number;
+
   articleToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private articleService: ArticleService, private router: Router) { }
@@ -24,7 +26,9 @@ export class ArticleDetailComponent implements OnInit {
     // this.albums = this.albumService.getAlbums();
     });
 
-    this.articleToDisplay = this.articleService.getArticleById(this.articleId);
+this.articleToDisplay = this.articleService.getArticleById(this.articleId);
+
+    // this.articleToDisplay = this.articleService.getArticleById(this.articleId);
     console.log(this.articleToDisplay);
     // this.albumToDisplay =  this.albums;
 
