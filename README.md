@@ -97,6 +97,10 @@ Then I will refactor and make it look pretty.
 
 * 'Article' component created and functional
 
+* database created and functioning
+
+* Article Service created
+
 
 
 

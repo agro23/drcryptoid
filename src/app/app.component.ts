@@ -27,6 +27,8 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    this.articles = this.articleService.getArticles();
+
       this._data.getPrices()
         .subscribe(res => {
           this.cryptos = res;

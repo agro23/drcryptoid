@@ -4,6 +4,7 @@ import { NgForm } from '@angular/forms';
 import { DataService } from './data.service';         // Add this for crypto lookup
 import { HttpClientModule } from '@angular/common/http';    // Add this for crypto lookup
 import { FormsModule } from '@angular/forms';
+import { routing } from './app.routing';
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 
@@ -18,6 +19,10 @@ import { SearchFilterComponent } from './search-filter/search-filter.component';
 import { ListCardComponent } from './list-card/list-card.component';
 import { ListComponent } from './list/list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -44,6 +49,9 @@ export const firebaseConfig = {
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
     MultiselectDropdownModule
   ],
   providers: [DataService],

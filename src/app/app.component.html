@@ -20,11 +20,11 @@
   <!--div *ngFor="let album of albums | async" class="panel panel-default"/div-->
   <div>
     <div class="panel-body" class="selectedArticle">
-      <h3 (click)="goToArticleDetailPage(album)" ><em>{{article.articleHeader}}</em> by {{article.author}}</h3>
-      <h4>{{article.uploadDate}}</h4>
-      <p class="ledeStyle">{{article.lede}}</p>
+      <h3 (click)="goToArticleDetailPage(album)" ><em>article.articleHeader</em> by article.author</h3>
+      <h4>article.uploadDate</h4>
+      <p class="ledeStyle">article.lede</p>
       <p class="articleStyle">ARTICLE WILL BE ON ITS OWN DETAIL PAGE</p>
-      <p class="votes">{{article.upvotes}}UPIMAGE | {{article.downvotes}}DOWNIMAGE</p>
+      <p class="votes">article.upvotesUPIMAGE | article.downvotesDOWNIMAGE</p>
       <div *ngIf="currentRoute === '/admin'">
         <!-- this will be if logged in as admin -->
         {{article.name}}
