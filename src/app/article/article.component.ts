@@ -14,10 +14,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class ArticleComponent implements OnInit {
   articleId: string;
   articleToDisplay;
-  articles: Article[];
-  // myArticles: Article[];
-
-
+  articles: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
     // this.articles = this.articleService.getArticles();
   // this.myArticles = [this.testArticle1, this.testArticle1, this.testArticle1, this.testArticle1, this.testArticle1];
@@ -37,7 +35,7 @@ export class ArticleComponent implements OnInit {
   public commentsIds: number[],
   public upvotes: number,
   public downvotes: number
-) {} */
+) {}
 
   testArticle1 = new Article(0, "Bitcoin?", "Andy Grossberg", "7", "CRUD", "10/10/18", "Webtwo Ipsum Ngmoco Groupon Appjet Ngmoco, Bitcoin?", "Knewton appjet heroku unigo, bebo. Blekko ifttt jabber jumo heroku vuvox jibjab, fleck eskobo mozy meebo. Lijit trulia lijit dopplr napster, yoono kosmix. Chegg zimbra ning greplin etsy plugg movity tumblr, cuil jibjab yammer sococo jumo. Waze chartly ifttt, akismet. Wikia greplin balihoo zinch ifttt, stypi loopt plaxo.",
 
@@ -65,24 +63,23 @@ export class ArticleComponent implements OnInit {
 
   this.story = "Knewton appjet heroku unigo, bebo. Blekko ifttt jabber jumo heroku vuvox jibjab, fleck eskobo mozy meebo. Lijit trulia lijit dopplr napster, yoono kosmix. Chegg zimbra ning greplin etsy plugg movity tumblr, cuil jibjab yammer sococo jumo. Waze chartly ifttt, akismet. Wikia greplin balihoo zinch ifttt, stypi loopt plaxo.\nShopify plickers oooj woopra, whrrl appjet. Bitly jajah spotify xobni dopplr zynga bitly joost, appjet geni reddit jabber joost. Imeem ngmoco cotweet groupon zlio, palantir spotify zillow. Kippt gooru spock oooooc orkut, akismet quora. Sococo plugg jabber akismet wikia, sococo handango knewton. Akismet sclipo geni plaxo koofers wufoo, imvu heroku zoho zapier. Lanyrd movity zappos gooru ifttt gsnap, wesabe skype mog spock. Lijit edmodo ifttt bitly akismet, bitly odeo. Disqus insala dopplr, heroku.\nReddit ning loopt twitter blekko imeem, jumo insala trulia mobly. Revver jibjab knewton sifteo mzinga, palantir meevee. tivo convore. Hulu zooomr handango kaboodle, yoono kosmix dogster sifteo, klout eskobo. Fleck sococo etsy chartly zlio wikia, babblely meebo lanyrd whrrl.\nHeroku odeo eduvant movity revver, sifteo wesabe orkut, plickers oovoo joost. Vuvox imvu kazaa cuil yammer edmodo kno, bebo blippy dropio zoho bitly. Imvu knewton mobly twones, jaiku. Kosmix doostang shopify mog spock, zynga weebly. Jiglu zoho loopt xobni trulia, chartly heroku lijit. Zillow cloudera sclipo waze convore scribd unigo geni, squidoo jaiku disqus movity squidoo. jibjab imvu lala. Octopart tivo appjet convore zillow imeem weebly odeo, dropio glogster vimeo zillow oooooc. Zoodles empressr flickr kaboodle, groupon squidoo.\nGreplin zoodles kazaa plaxo ning, octopart ngmoco. Zoosk udemy zimbra ngmoco trulia chartly, insala wakoopa sifteo oovoo, hulu empressr gsnap bitly. Omgpop rovio twones ebay zynga zinch, yuntaa shopify zapier. Lijit disqus hojoki groupon lanyrd, whrrl zimbra. dropio handango. Jajah klout jabber doostang yammer kiko, foodzie dopplr mozy omgpop. Qeyno zlio zinch edmodo, ideeli kippt kosmix udemy, blekko zynga. Klout gsnap hulu yuntaa meebo, handango wikia quora. voxy. Elgg quora spock empressr gooru bubbli, convore wesabe ideeli lanyrd, zooomr plugg zappos spotify.\nZynga dropio cotweet meevee, spock. Zlio appjet octopart bitly koofers unigo loopt, omgpop wesabe groupon omgpop. Jiglu jibjab eduvant yoono, chegg. Tumblr yuntaa squidoo trulia hojoki, unigo heekya spock. Lijit ideeli wufoo eskobo zapier twones, meevee ideeli hulu grockit, blyve kosmix lanyrd mzinga. Doostang imvu babblely heekya scribd, jabber ning meevee lijit, weebly plickers elgg. whrrl hulu. Unigo groupon orkut yuntaa dogster spotify shopify, yammer imeem heekya zinch lanyrd. Kosmix lanyrd kaboodle shopify, sclipo. Etsy spock dropio ifttt, blippy mobly. Imvu yuntaa edmodo jabber etsy unigo, kno fleck reddit zinch. Blekko prezi yammer eskobo, hipmunk."
   */
-  myArticles = [this.testArticle1, this.testArticle2, this.testArticle3, this.testArticle4, this.testArticle5];
+
+  // myArticles = [this.testArticle1, this.testArticle2, this.testArticle3, this.testArticle4, this.testArticle5];
 
 
   constructor(private route: ActivatedRoute, private location: Location, private articleService: ArticleService, private router: Router) { }
 
   ngOnInit() {
-    for (let i = 0; i < this.myArticles.length; i++){
-      this.myArticles[i].id = i;
-      console.log("i = " + i + " myArticles[i].id is " + this.myArticles[i].id);
+    // for (let i = 0; i < this.myArticles.length; i++){
+    //   this.myArticles[i].id = i;
+    //   console.log("i = " + i + " myArticles[i].id is " + this.myArticles[i].id);
+  // }
+    this.articles = this.articleService.getArticles();
     }
 
-    this.articles = this.articleService.getArticles();
-
-  }
-
   goToArticleDetailPage(clickedArticle) {
-    // this.router.navigate(['article', clickedAlbum.$key]);
-    this.router.navigate(['article', clickedArticle.id]);
-    console.log("clickedArticle.id = " + clickedArticle.id);
+    console.log("clickedArticle.id = " + clickedArticle.$key);
+    this.router.navigate(['article', clickedArticle.$key]);
+    // this.router.navigate(['article', clickedArticle.id]);
   }
 }

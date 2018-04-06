@@ -112,13 +112,13 @@ Then I will refactor and make it look pretty.
 
 * Top page shows mock articles from Article component for now.
 
-* User can link from title and lede on top page to a page for the article and back <--
-
-
-
 * Database modified to hold article structure
 
 * Mock articles uploaded to db
+
+
+* User can link from title and lede on top page to a page for the article and back
+
 
 * Articles displayed correctly
 

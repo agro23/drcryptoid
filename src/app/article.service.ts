@@ -4,15 +4,14 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class ArticleService {
-  // articles: FirebaseListObservable<any[]>; FIX FOR FIREBASE
-  articles: Article[];
+  articles: FirebaseListObservable<any[]>; //FIX FOR FIREBASE
+  // articles: Article[];
 
     constructor(private database: AngularFireDatabase) {
-      // this.articles = database.list('articles');
+      this.articles = database.list('articles');
     }
 
       getArticles() {
-        // return ALBUMS;
         return this.articles;
       }
 
@@ -20,21 +19,32 @@ export class ArticleService {
           this.articles.push(newArticle);
       }
 
-      getArticleById(articleId: number){
-        return this.database.object('articles/' + articleId);
-        }
-
-      // getArticleById(articleId: string){
+      // getArticleById(articleId: number){
       //   return this.database.object('articles/' + articleId);
       //   }
 
-      // updateArticle(localUpdatedArticle){
-      // HAVE TO UPDATE ALL FIELDS
-      //   var articleEntryInFirebase = this.getArticleById(localUpdatedArticle.$key);
-      //   articleEntryInFirebase.update({title: localUpdatedArticle.title,
-      //                               artist: localUpdatedArticle.artist,
-      //                               description: localUpdatedArticle.description});
-      // }
+      getArticleById(articleId: string){
+        return this.database.object('articles/' + articleId);
+        }
+
+      updateArticle(localUpdatedArticle){
+        var articleEntryInFirebase = this.getArticleById(localUpdatedArticle.$key);
+        articleEntryInFirebase.update({id: localUpdatedArticle.id,
+        name: localUpdatedArticle.name,
+        author: localUpdatedArticle.author,
+        level: localUpdatedArticle.level,
+        rights: localUpdatedArticle.rights,
+        uploadDate: localUpdatedArticle.uploadDate,
+        articleHeader: localUpdatedArticle.articleHeader,
+        lede: localUpdatedArticle.lede,
+        bodyCopy: localUpdatedArticle.bodyCopy,
+        link: localUpdatedArticle.link,
+        keywords: localUpdatedArticle.keywords,
+        comments: localUpdatedArticle.comments,
+        upvotes: localUpdatedArticle.upvotes,
+        downvotes: localUpdatedArticle.downvotes,
+        target: localUpdatedArticle.target});
+      }
 
       deleteArticle(localArticleToDelete){
         var articleEntryInFirebase = this.getArticleById(localArticleToDelete.$key);

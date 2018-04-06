@@ -5,6 +5,7 @@ import { DataService } from './data.service';         // Add this for crypto loo
 import { HttpClientModule } from '@angular/common/http';    // Add this for crypto lookup
 import { FormsModule } from '@angular/forms';
 import { routing } from './app.routing';
+import { ArticleService } from './article.service';         
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 
@@ -58,7 +59,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     MultiselectDropdownModule
   ],
-  providers: [DataService],
+  providers: [ArticleService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
