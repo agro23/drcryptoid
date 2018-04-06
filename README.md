@@ -78,7 +78,24 @@ There will be two levels of user for this site: Administrator and Reader.
 
 ## Specifications
 
+**Ignoring all previous specs**
+This project has been reconfigured due to my new ability to use firebase for data persistence.
+The project is divided into sections:
+- 1) The articles
+- 2) The comments
+- 3) The widgets
+- 4) The forum
+
+Then I will refactor and make it look pretty.
+
 * App component created and functional
+
+* 'Article' model created
+
+* 'Article' component created and functional
+
+
+
 
 * 'Reader' Model created and functional
 
@@ -87,10 +104,6 @@ There will be two levels of user for this site: Administrator and Reader.
 * 'Admin' model created and functional
 
 * 'Admin' component created and functional
-
-* 'Article' model created
-
-* 'Article' component created and functional
 
 * 'Forum' model created
 
