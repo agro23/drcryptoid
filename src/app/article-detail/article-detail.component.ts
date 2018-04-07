@@ -45,7 +45,7 @@ export class ArticleDetailComponent implements OnInit {
     })
   }
 
-  goToBackToTop() {
+  goBackToTop() {
     this.router.navigate(['']);
     }
 

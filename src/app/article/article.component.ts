@@ -79,7 +79,7 @@ export class ArticleComponent implements OnInit {
 
   goToArticleDetailPage(clickedArticle) {
     console.log("clickedArticle.id = " + clickedArticle.$key);
-    this.router.navigate(['article', clickedArticle.$key]);
+    this.router.navigate(['articles', clickedArticle.$key]);
     // this.router.navigate(['article', clickedArticle.id]);
   }
 }
