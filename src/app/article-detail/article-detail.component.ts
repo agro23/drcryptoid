@@ -12,9 +12,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [ArticleService]
 })
 export class ArticleDetailComponent implements OnInit {
-  // articleId: string;
-  articleId: number;
-
+  articleId: string;
   articleToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private articleService: ArticleService, private router: Router) { }
@@ -22,23 +20,29 @@ export class ArticleDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
     this.articleId = urlParameters['id'];
+  });
 
-    // this.albums = this.albumService.getAlbums();
-    });
+  this.articleToDisplay = this.articleService.getArticleById(this.articleId);
+  console.log(this.articleToDisplay);
 
-this.articleToDisplay = this.articleService.getArticleById(this.articleId);
-
-    // this.articleToDisplay = this.articleService.getArticleById(this.articleId);
-    console.log(this.articleToDisplay);
-    // this.albumToDisplay =  this.albums;
-
-    // this.articleService.getArticleById(this.articleId).subscribe(dataLastEmittedFromObserver => {
-      //  this.articleToDisplay = new Article(dataLastEmittedFromObserver.title,
-      //                                   dataLastEmittedFromObserver.artist,
-      //                                   dataLastEmittedFromObserver.description)
-    // })
-
-
+    this.articleService.getArticleById(this.articleId).subscribe(dataLastEmittedFromObserver => {
+       this.articleToDisplay = new Article(dataLastEmittedFromObserver.id,
+                                        dataLastEmittedFromObserver.name,
+                                        dataLastEmittedFromObserver.author,
+                                        dataLastEmittedFromObserver.level,
+                                        dataLastEmittedFromObserver.rights,
+                                        dataLastEmittedFromObserver.uploadDate,
+                                       dataLastEmittedFromObserver.articleHeader,
+                                       dataLastEmittedFromObserver.lede,
+                                       dataLastEmittedFromObserver.bodyCopy,
+                                       dataLastEmittedFromObserver.link,
+                                       dataLastEmittedFromObserver.keywords,
+                                       dataLastEmittedFromObserver.comments,
+                                       dataLastEmittedFromObserver.upvotes,
+                                       dataLastEmittedFromObserver.downvotes,
+                                       dataLastEmittedFromObserver.target
+                                      )
+    })
   }
 
   goToBackToTop() {

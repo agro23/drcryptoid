@@ -116,11 +116,12 @@ Then I will refactor and make it look pretty.
 
 * Mock articles uploaded to db
 
-
-* User can link from title and lede on top page to a page for the article and back
-
-
 * Articles displayed correctly
+
+
+* User can link from title and lede on top page to a page for the article and back <--
+  - ROUTING IS SCREWED UP SOMEHOW
+
 
 * Articles can be created (Admin level assumed)
 
@@ -221,15 +222,12 @@ Then I will refactor and make it look pretty.
 * Navigate to node_modules/.bin/ and type "jasmine init"
 * Navigate back to the project's root directory
 
-* Type "npm install ngtweet --save-dev" if you don't have it installed already <-------------------------------------------------------------------------
-* Type "bower install ngtweet" <-------------------------------------------------------------------------------------------------------------------------
 * Type "npm install dotenv-webpack --save-dev" to process environment variables (if you don't have Dotenv installed).
 * Type "npm install typescript -g" (unless you already have Typescript installed)
 * Type "npm install -g @angular/cli@1.6.5 --save" (unless you already have Angular installed)
   - If you're on a Mac and get an error: Type "brew upgrade node"
-* Type "npm install --save-dev angular-2-dropdown-multiselect" <-------------------------------- Not sure if this is contained in Core or not ---------------
 * Type "npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save" to add firebase if you don't have it.
-  - The app's key will be provided in a separate file (OR YOU WILL HAVE TO GET YOUR OWN!).<----------------------
+  - The app's key will be provided in a separate file (OR YOU WILL HAVE TO GET YOUR OWN!).
 * Add: ",
     "types": [ "firebase" ]" to the end of your tsconfig.json file if it's not in there.
 * Type "npm install"

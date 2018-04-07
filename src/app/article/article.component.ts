@@ -12,8 +12,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [ArticleService]
 })
 export class ArticleComponent implements OnInit {
-  articleId: string;
-  articleToDisplay;
+  // articleId: string;
+  // articleToDisplay;
   articles: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 

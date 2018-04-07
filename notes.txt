@@ -5,6 +5,16 @@ Second point: Make the database simple. Make every entry of the same object type
   Second point, part A: Make sure that every article doesn't carry its paragraphs as anything more than a text field not an array of paragraphs.
 
   Second point, part B: Comments might live attached to their parent in a comment field array (an array of articles [with or without routes] that are type 'Comment'. This would allow nested comments to posts so that a comment could have a comment and so on.
+ =====
+
+ export let masterFirebaseConfig = {
+   apiKey: "AIzaSyAya6eAdqjPohEVnGpdExpXaAmLwex1ugQ",
+     authDomain: "drcryptoid-23.firebaseapp.com",
+     databaseURL: "https://drcryptoid-23.firebaseio.com",
+     projectId: "drcryptoid-23",
+     storageBucket: "drcryptoid-23.appspot.com",
+     messagingSenderId: "440759972470"
+   };
 
 
 use this tutorial:
