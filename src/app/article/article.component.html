@@ -20,11 +20,10 @@
     </div>
 
     <div *ngFor="let article of articles | async"><!--how can I make this scroll?-->
-      <h3 (click)="goToArticleDetailPage(article)">{{article.name}}</h3>
+      <h3 (click)="goToArticleDetailPage(article)" routerLink="article">{{article.name}}</h3>
       <p>{{article.lede}}</p>
       <p>Upvotes: {{article.upvotes}} | Downvotes: {{article.downvotes}}
       <br>
     </div>
 
   </div>
-  
