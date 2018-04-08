@@ -1,0 +1,78 @@
+<h4>Edit Article</h4>
+
+<label>Article Name:</label>
+<input [(ngModel)]="selectedArticle.name">
+<br>
+
+<label>Article Author:</label>
+<input [(ngModel)]="selectedArticle.author">
+<br>
+
+<label>Article Level:</label>
+<input [(ngModel)]="selectedArticle.level">
+<br>
+
+<label>Article Rights:</label>
+<input [(ngModel)]="selectedArticle.rights">
+<br>
+
+<label>Article Header:</label>
+<input [(ngModel)]="selectedArticle.header">
+<br>
+
+<label>Article Lede:</label>
+<input [(ngModel)]="selectedArticle.lede">
+<br>
+
+<label>Article Body Copy:</label>
+<input [(ngModel)]="selectedArticle.bodycopy">
+<br>
+
+<label>Article Link:</label>
+<input [(ngModel)]="selectedArticle.link">
+<br>
+
+<label>Article Lede:</label>
+<input [(ngModel)]="selectedArticle.lede">
+<br>
+
+<label>Article Keywords:</label>
+<input [(ngModel)]="selectedArticle.keywords">
+<br>
+
+<label>Article Comments:</label>
+<input [(ngModel)]="selectedArticle.comments">
+<br>
+
+<label>Article Upvotes:</label>
+<input [(ngModel)]="selectedArticle.upvotes">
+<br>
+
+<label>Article Downvotes:</label>
+<input [(ngModel)]="selectedArticle.downvotes">
+<br>
+
+<label>Article Target:</label>
+<input [(ngModel)]="selectedArticle.target">
+<br>
+
+
+<!--br><button class="btn btn-warning" (click)="beginUpdatingArticle(selectedArticle)">Update</button> | <button class="btn btn-danger" (click)="beginDeletingArticle(selectedArticle)">Delete</button-->
+
+<br><button class="btn btn-warning" >Update</button> | <button class="btn btn-danger" (click)="beginDeletingArticle(selectedArticle)">Delete</button>
+
+<!-- public id: number,
+public name: string,
+public author: string,
+public level: string,
+public rights: string,
+public uploadDate: string,
+public articleHeader: string,
+public lede: string,
+public bodyCopy: string,
+public link: string,
+public keywords: string[],
+public comments: Article[],
+public upvotes: number,
+public downvotes: number,
+public target: string -->

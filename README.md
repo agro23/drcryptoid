@@ -43,7 +43,7 @@ Once I have built out the basic structure of my application and separated the co
 
 3) Project demonstrates understanding of this week's concepts. If prompted, I am able to discuss code with an instructor using correct terminology.
 
-## Use Stories
+## User Stories
 There will be two levels of user for this site: Administrator and Reader.
 
 **READER**
@@ -117,23 +117,26 @@ Then I will refactor and make it look pretty.
 * Mock articles uploaded to db
 
 * Articles displayed correctly
+  * Articles show upvotes and downvotes
+
+* User can link from title and lede on top page to a page for the article and back
+
+* User can get to inactive Admin dashboard from 'login'
 
 
-* User can link from title and lede on top page to a page for the article and back <--
-  - ROUTING IS SCREWED UP SOMEHOW
+* Articles can be created (Admin level assumed) <--
 
-
-* Articles can be created (Admin level assumed)
-
-* Articles can be edited (Admin level assumed)
+* Articles can be updated (Admin level assumed)
 
 * Articles can be deleted (Admin level assumed)
 
-* Articles show upvotes and downvotes
+* Admin page is working
 
 * Articles can have comments added
 
 * Article upvoting increments and decrements voting as needed
+
+* Articles appear with CR/LF between paragraphs
 
 * Create User model with privileges
 

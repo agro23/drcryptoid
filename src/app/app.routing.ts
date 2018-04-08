@@ -1,9 +1,11 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent }   from './about/about.component';
+import { AdminComponent }   from './admin/admin.component';
 import { ArticleComponent }   from './article/article.component';
-
 import { ArticleDetailComponent }   from './article-detail/article-detail.component';
+import { EditArticleComponent }   from './edit-article/edit-article.component';
+
 // import { AdminComponent }   from './admin/admin.component';
 
 
@@ -23,6 +25,14 @@ const appRoutes: Routes = [
   {
     path: 'articles/:id',
     component: ArticleDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
+  },
+  {
+    path: 'edit-article',
+    component: EditArticleComponent
   }
 
 ];
