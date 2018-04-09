@@ -5,6 +5,7 @@ import { AdminComponent }   from './admin/admin.component';
 import { ArticleComponent }   from './article/article.component';
 import { ArticleDetailComponent }   from './article-detail/article-detail.component';
 import { EditArticleComponent }   from './edit-article/edit-article.component';
+import { AddArticleComponent }   from './add-article/add-article.component';
 
 // import { AdminComponent }   from './admin/admin.component';
 
@@ -33,6 +34,10 @@ const appRoutes: Routes = [
   {
     path: 'edit-article',
     component: EditArticleComponent
+  },
+  {
+    path: 'add-article',
+    component: AddArticleComponent
   }
 
 ];

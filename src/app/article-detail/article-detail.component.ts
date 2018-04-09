@@ -11,6 +11,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./article-detail.component.css'],
   providers: [ArticleService]
 })
+
 export class ArticleDetailComponent implements OnInit {
   articleId: string;
   articleToDisplay;

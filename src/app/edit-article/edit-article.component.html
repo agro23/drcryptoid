@@ -1,5 +1,9 @@
 <h4>Edit Article</h4>
 
+<label>Article ID:</label>
+<input [(ngModel)]="selectedArticle.Id">
+<br>
+
 <label>Article Name:</label>
 <input [(ngModel)]="selectedArticle.name">
 <br>
@@ -57,9 +61,9 @@
 <br>
 
 
-<!--br><button class="btn btn-warning" (click)="beginUpdatingArticle(selectedArticle)">Update</button> | <button class="btn btn-danger" (click)="beginDeletingArticle(selectedArticle)">Delete</button-->
+<button class="btn btn-warning" (click)="beginUpdatingArticle(selectedArticle)">Update</button> | <button class="btn btn-danger" (click)="beginDeletingArticle(selectedArticle)">Delete</button>
 
-<br><button class="btn btn-warning" >Update</button> | <button class="btn btn-danger" (click)="beginDeletingArticle(selectedArticle)">Delete</button>
+<!-- <br><button class="btn btn-warning" >Update</button> | <button class="btn btn-danger" (click)="beginDeletingArticle(selectedArticle)">Delete</button> -->
 
 <!-- public id: number,
 public name: string,

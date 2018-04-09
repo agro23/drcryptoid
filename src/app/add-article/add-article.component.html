@@ -1,0 +1,144 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="yourFace">Add New Article to the Site</span></h3>
+  </div>
+  <form class="panel-body form-group">
+    <div>
+      <label>Article ID:</label>
+      <input #newArticleId>
+      <br>
+    </div>
+    <div>
+      <label>Article Name:</label>
+      <input #newArticleName>
+      <br>
+    </div>
+    <div>
+      <label>Article Author:</label>
+      <input #newArticleAuthor>
+      <br>
+    </div>
+    <div>
+      <label>Article Level:</label>
+      <input #newArticleLevel>
+      <br>
+    </div>
+    <div>
+      <label>Article Rights:</label>
+      <input #newArticleRights>
+      <br>
+    </div>
+    <div>
+      <label>Article Upload Date:</label>
+      <input #newArticleUploadDate>
+      <br>
+    </div>
+    <div>
+      <label>Article Header:</label>
+      <input #newArticleHeadline>
+      <br>
+    </div>
+    <div>
+      <label>Article Lede:</label>
+      <input #newArticleLede>
+      <br>
+    </div>
+    <div>
+      <label>Article Body Copy:</label>
+      <input #newArticleBodycopy>
+      <br>
+    </div>
+    <div>
+      <label>Article Link:</label>
+      <input #newArticleLink>
+      <br>
+    </div>
+    <div>
+      <label>Article Keywords:</label>
+      <input #newArticleKeywords>
+      <br>
+    </div>
+    <div>
+      <label>Article Comments:</label>
+      <input #newArticleComments>
+      <br>
+    </div>
+    <div>
+      <label>Article Upvotes:</label>
+      <input #newArticleUpvotes>
+      <br>
+    </div>
+    <div>
+      <label>Article Downvotes:</label>
+      <input #newArticleDownvotes>
+      <br>
+    </div>
+    <div>
+      <label>Article Target:</label>
+      <input #newArticleTarget>
+      <br>
+    </div>
+    <button type="button" name="button" (click)="testRouting(newArticleTarget.value)">Push Me</button>
+    <button type="button" name="fred" (click)="passValue(newArticleId.value,newArticleName.value,newArticleAuthor.value,newArticleLevel.value,newArticleRights.value,newArticleUploadDate.value,newArticleArticleHeader.value,newArticleLede.value,newArticleBodycopy.value,newArticleLink.value,
+    newArticleKeywords.value,newArticleComments.value,newArticleUpvotes.value,newArticleDownvotes.value,newArticleTarget.value)">Fred</button>
+
+    <!-- <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">Add</button> -->
+
+    <!-- <button type="button" name="button" class="btn btn-info" (click)="testRouting()">Test</button> -->
+    <button class="btn btn-info" (click)="sendForm(
+    newArticleId.value, newArticleName.value, newArticleAuthor.value, newArticleLevel.value, newArticleRights.value, newArticleUploadDate.value, newArticleHeadline.value, newArticleLede.value,newArticleBodycopy.value,newArticleLink.value,
+    newArticleKeywords.value,newArticleComments.value,newArticleUpvotes.value,newArticleDownvotes.value,newArticleTarget.value)">AddIt</button>
+    <!-- newArticleName.value,
+    newArticleAuthor.value,
+    newArticleLevel.value,
+    newArticleRights.value) -->
+
+    <!--
+    newArticleUploadDate.value,
+    newArticleArticleHeader.value,
+    newArticleLede.value,
+    newArticleBodycopy.value,
+    newArticleLink.value,
+    newArticleKeywords.value,
+    newArticleComments.value,
+    newArticleUpvotes.value,
+    newArticleDownvotes.value,
+    newArticleTarget.value)">AddIt</button> -->
+
+    <!-- newArticleId.value = '';
+    newArticleName.value = '';
+    newArticleAuthor.value = '';
+    newArticleLevel.value = '';
+    newArticleRights.value = '';
+    newArticleUploadDate.value = '';
+    newArticleArticleHeader.value = '';
+    newArticleLede.value = '';
+    newArticleBodycopy.value = '';
+    newArticleLink.value = '';
+    newArticleKeywords.value = '';
+    newArticleComments.value = '';
+    newArticleUpvotes.value = '';
+    newArticleDownvotes.value = '';
+    newArticleTarget.value = ''">Add</button> -->
+  </form>
+
+  <!-- </div> -->
+</div>
+<!-- public id: number,
+public name: string,
+public author: string,
+public level: string,
+public rights: string,
+public uploadDate: string,
+public articleHeader: string,
+public lede: string,
+public bodyCopy: string,
+public link: string,
+public keywords: string[],
+public comments: Article[],
+public upvotes: number,
+public downvotes: number,
+public target: string -->
+<!-- <div>
+  <app-marketplace></app-marketplace>
+</div> -->

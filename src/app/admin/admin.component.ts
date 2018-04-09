@@ -13,7 +13,11 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  editArticle() {
+  addArticles() {
+    this.router.navigate(['add-article']);
+    }
+
+  editArticles() {
     this.router.navigate(['edit-article']);
     }
 

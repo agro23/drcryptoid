@@ -26,6 +26,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AboutComponent } from './about/about.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { EditArticleComponent } from './edit-article/edit-article.component';
+import { AddArticleComponent } from './add-article/add-article.component';
 
 
 export const firebaseConfig = {
@@ -50,7 +51,8 @@ export const firebaseConfig = {
     DashboardComponent,
     AboutComponent,
     ArticleDetailComponent,
-    EditArticleComponent
+    EditArticleComponent,
+    AddArticleComponent
   ],
   imports: [
     BrowserModule,

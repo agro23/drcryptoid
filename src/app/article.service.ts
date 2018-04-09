@@ -17,7 +17,14 @@ export class ArticleService {
 
       addArticle(newArticle: Article) {
           this.articles.push(newArticle);
+          console.log("got into addArticle in article service at least!");
       }
+
+      // addArticle(fred: Article) {
+      //     // this.articles.push(newArticle);
+      //     console.log("got into addArticle in article service at least!");
+      //     return;
+      // }
 
       // getArticleById(articleId: number){
       //   return this.database.object('articles/' + articleId);
@@ -28,6 +35,7 @@ export class ArticleService {
         }
 
       updateArticle(localUpdatedArticle){
+        console.log("got into updateArticle in article `service at least!");
         var articleEntryInFirebase = this.getArticleById(localUpdatedArticle.$key);
         articleEntryInFirebase.update({id: localUpdatedArticle.id,
         name: localUpdatedArticle.name,
