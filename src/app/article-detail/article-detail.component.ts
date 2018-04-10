@@ -42,8 +42,8 @@ export class ArticleDetailComponent implements OnInit {
                                        dataLastEmittedFromObserver.upvotes,
                                        dataLastEmittedFromObserver.downvotes,
                                        dataLastEmittedFromObserver.target
-                                      )
-    })
+                                     );
+    });
   }
 
   goBackToTop() {

@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Article } from "./models/article.model";
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class ArticleService {
+
   articles: FirebaseListObservable<any[]>; //FIX FOR FIREBASE
   // articles: Article[];
   public selectedArticle: Article;
@@ -27,13 +29,9 @@ export class ArticleService {
       //     return;
       // }
 
-      // getArticleById(articleId: number){
-      //   return this.database.object('articles/' + articleId);
-      //   }
-
       getArticleById(articleId: string){
         return this.database.object('articles/' + articleId);
-        }
+      }
 
       updateArticle(localUpdatedArticle){
         console.log("got into updateArticle in article `service at least!");

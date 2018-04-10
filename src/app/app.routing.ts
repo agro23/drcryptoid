@@ -32,8 +32,12 @@ const appRoutes: Routes = [
     path: 'admin',
     component: AdminComponent
   },
+  // {
+  //   path: 'edit-article',
+  //   component: EditArticleComponent
+  // },
   {
-    path: 'edit-article',
+    path: 'edits/:id',
     component: EditArticleComponent
   },
   {

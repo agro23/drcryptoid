@@ -22,22 +22,27 @@ export class AdminComponent implements OnInit {
     this.articles = this.articleService.getArticles();
   }
 
-  ngOnDestroy() {
-    console.log("on destroy selectedArticle = " + this.selectedArticle.name);
-    this.articleService.selectedArticle = this.selectedArticle;
-    console.log("OnDestroy this.articleService.selectedArticle = " + this.articleService.selectedArticle.name);
-  }
+  // ngOnDestroy() {
+  //   console.log("on destroy selectedArticle = " + this.selectedArticle.name);
+  //   this.articleService.selectedArticle = this.selectedArticle;
+  //   console.log("OnDestroy this.articleService.selectedArticle = " + this.articleService.selectedArticle.name);
+  // }
 
   addArticles() {
     this.router.navigate(['add-article']);
     }
 
+  // editArticles(selectedArticle) {
+  //   this.selectedArticle = selectedArticle;
+  //   console.log ("key is: " + selectedArticle.$key);
+  //   // this.articleService.selectedArticle = this.articleService.getArticleById(selectedArticle.$key);
+  //   this.router.navigate(['edit-article']);
+  //   }
+
   editArticles(selectedArticle) {
-    this.selectedArticle = selectedArticle;
     console.log ("key is: " + selectedArticle.$key);
-    // this.articleService.selectedArticle = this.articleService.getArticleById(selectedArticle.$key);
-    this.router.navigate(['edit-article']);
-    }
+    this.router.navigate(['edits', selectedArticle.$key]);
+  }
 
   beginDeletingArticle(articleToDelete){
       if(confirm("Are you sure you want to delete this article from the db?")){
