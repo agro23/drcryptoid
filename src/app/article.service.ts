@@ -6,6 +6,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class ArticleService {
   articles: FirebaseListObservable<any[]>; //FIX FOR FIREBASE
   // articles: Article[];
+  public selectedArticle: Article;
 
     constructor(private database: AngularFireDatabase) {
       this.articles = database.list('articles');
@@ -43,7 +44,7 @@ export class ArticleService {
         level: localUpdatedArticle.level,
         rights: localUpdatedArticle.rights,
         uploadDate: localUpdatedArticle.uploadDate,
-        articleHeader: localUpdatedArticle.articleHeader,
+        articleHeadline: localUpdatedArticle.articleHeadline,
         lede: localUpdatedArticle.lede,
         bodyCopy: localUpdatedArticle.bodyCopy,
         link: localUpdatedArticle.link,

@@ -123,12 +123,11 @@ Then I will refactor and make it look pretty.
 
 * User can get to inactive Admin dashboard from 'login'
 
-
-* Articles can be created (Admin level assumed) <--
-
-* Articles can be updated (Admin level assumed)
+* Articles can be created (Admin level assumed)
 
 * Articles can be deleted (Admin level assumed)
+
+* Articles can be updated (Admin level assumed) <--
 
 * Admin page is working
 

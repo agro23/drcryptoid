@@ -6,6 +6,7 @@ import { ArticleComponent }   from './article/article.component';
 import { ArticleDetailComponent }   from './article-detail/article-detail.component';
 import { EditArticleComponent }   from './edit-article/edit-article.component';
 import { AddArticleComponent }   from './add-article/add-article.component';
+import { DashboardComponent }   from './dashboard/dashboard.component';
 
 // import { AdminComponent }   from './admin/admin.component';
 

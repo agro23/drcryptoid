@@ -5,7 +5,7 @@ import { DataService } from './data.service';         // Add this for crypto loo
 import { HttpClientModule } from '@angular/common/http';    // Add this for crypto lookup
 import { FormsModule } from '@angular/forms';
 import { routing } from './app.routing';
-import { ArticleService } from './article.service';         
+import { ArticleService } from './article.service';
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 
@@ -19,7 +19,6 @@ import { LookupComponent } from './lookup/lookup.component';
 import { SearchFilterComponent } from './search-filter/search-filter.component';
 import { ListCardComponent } from './list-card/list-card.component';
 import { ListComponent } from './list/list.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -27,6 +26,7 @@ import { AboutComponent } from './about/about.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { EditArticleComponent } from './edit-article/edit-article.component';
 import { AddArticleComponent } from './add-article/add-article.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 export const firebaseConfig = {

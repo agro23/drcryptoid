@@ -1,7 +1,9 @@
 <h4>Edit Article</h4>
+<h3> this needs to give you a list of articles to edit first then select one!</h3>
+<h3> maybe go up a level </h3>
 
 <label>Article ID:</label>
-<input [(ngModel)]="selectedArticle.Id">
+<input [(ngModel)]="selectedArticle.id">
 <br>
 
 <label>Article Name:</label>
@@ -21,7 +23,7 @@
 <br>
 
 <label>Article Header:</label>
-<input [(ngModel)]="selectedArticle.header">
+<input [(ngModel)]="selectedArticle.headline">
 <br>
 
 <label>Article Lede:</label>
@@ -61,7 +63,8 @@
 <br>
 
 
-<button class="btn btn-warning" (click)="beginUpdatingArticle(selectedArticle)">Update</button> | <button class="btn btn-danger" (click)="beginDeletingArticle(selectedArticle)">Delete</button>
+<!-- <button class="btn btn-warning" (click)="beginUpdatingArticle(selectedArticle)">Update</button> | <button class="btn btn-danger" (click)="beginDeletingArticle(selectedArticle)">Delete</button> -->
+<button class="btn btn-warning" (click)="beginUpdatingArticle(selectedArticle)">Update</button>
 
 <!-- <br><button class="btn btn-warning" >Update</button> | <button class="btn btn-danger" (click)="beginDeletingArticle(selectedArticle)">Delete</button> -->
 

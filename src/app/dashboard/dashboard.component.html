@@ -1,4 +1,30 @@
-<h2>
-  <app-search-filter></app-search-filter>
-  <app-list></app-list>
-</h2>
+<h2>Dashboard</h2>
+  <!-- <app-search-filter></app-search-filter>
+  <app-list></app-list> -->
+  <div *ngFor="let article of articles | async" class="panel panel-default">
+  <div class="panel-body" class="selectedArticle">
+    <!-- <h3 (click)="goToDetailPage(album)" ><em>{{album.title}}</em> by {{album.artist}}</h3>
+    <div *ngIf="currentRoute === '/admin'"> -->
+      <div>
+        {{article.headline}} | <button type="button" name="editButton">Edit</button> | <button type="button" name="deleteButton"></button>
+        <hr>
+      <app-edit-article [selectedArticle]="article"></app-edit-article>
+    </div>
+  </div>
+</div>
+
+  <!-- <edit-article></edit-article>
+   -->
+
+<!-- <h2>Admin Dashboard</h2>
+
+<div *ngFor="let album of albums | async" class="panel panel-default">
+  <div class="panel-body" class="selectedAlbum">
+    <h3 (click)="goToDetailPage(album)" ><em>{{album.title}}</em> by {{album.artist}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{album.description}}
+      <hr>
+      <app-edit-album [selectedAlbum]="album"></app-edit-album>
+    </div>
+  </div>
+</div> -->

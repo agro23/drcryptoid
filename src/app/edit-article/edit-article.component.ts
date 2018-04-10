@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output, OnInit } from '@angular/core';
 import { ArticleService } from '../article.service';
+import { Article } from './../models/article.model';
 
 @Component({
   selector: 'app-edit-article',
@@ -7,12 +8,18 @@ import { ArticleService } from '../article.service';
   styleUrls: ['./edit-article.component.css'],
   providers: [ArticleService]
 })
+
 export class EditArticleComponent implements OnInit {
   @Input() selectedArticle;
+  // @Output() selectedArticle;
+  // selectedArticle: Article;
 
   constructor(private articleService: ArticleService) { }
 
   ngOnInit() {
+    this.selectedArticle = this.articleService.selectedArticle;
+    console.log("this.articleService.selectedArticle = " + this.articleService.selectedArticle);
+    console.log("selectedArticle = " + this.selectedArticle);
   }
 
   beginUpdatingArticle(articleToUpdate){

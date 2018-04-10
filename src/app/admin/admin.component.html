@@ -1,7 +1,26 @@
-<ul>
-  <li><a (click)="addArticles()">Add article</a></li>
-  <li><a (click)="editArticles()">Edit article</a></li>
-  <li>Delete article</li>
+<!-- <ul>
+  <li><a (click)="addArticles()">Add article</a></li> -->
+  <!-- <li><a (click)="editArticles()">Edit article</a></li> -->
+  <!-- <li>Delete article</li>
 </ul>
-<p>Also maybe logout and other site functions like add/delete user and other stuff. Maybe edit comments.</p>
+<p>Also maybe logout and other site functions like add/delete user and other stuff. Maybe edit comments.</p> -->
+
+
+<h2>Article Maintenance</h2>
+<div class="well">
+  <button type="button" name="addButton" (click)="addArticles()">Add</button>
+  <div *ngFor="let article of articles | async" class="panel panel-default">
+    <div class="selectedArticle">
+      <h3><strong>{{article.name}}</strong> <em>by {{article.author}}</em></h3> <button type="button" name="editButton" (click)="editArticles(article)">Edit</button> | <button type="button" name="deleteButton" (click)="beginDeletingArticle(article)">Delete</button>
+      <!-- <h3 (click)="goToDetailPage(album)" ><em>{{album.title}}</em> by {{album.artist}}</h3>
+      <div *ngIf="currentRoute === '/admin'">
+        {{album.description}}
+        <hr>
+        <app-edit-album [selectedAlbum]="album"></app-edit-album>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- <app-edit-article [selectedArticle]="article"></app-edit-article> -->
+
 <a (click)="returnToTopPage()">back</a>
