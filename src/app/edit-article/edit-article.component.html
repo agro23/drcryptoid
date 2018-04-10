@@ -22,8 +22,12 @@
 <input [(ngModel)]="selectedArticle.rights">
 <br>
 
+<label>Article Upload Date:</label>
+<input [(ngModel)]="selectedArticle.uploadDate">
+<br>
+
 <label>Article Header:</label>
-<input [(ngModel)]="selectedArticle.headline">
+<input [(ngModel)]="selectedArticle.articleHeadline">
 <br>
 
 <label>Article Lede:</label>
@@ -36,10 +40,6 @@
 
 <label>Article Link:</label>
 <input [(ngModel)]="selectedArticle.link">
-<br>
-
-<label>Article Lede:</label>
-<input [(ngModel)]="selectedArticle.lede">
 <br>
 
 <label>Article Keywords:</label>
@@ -74,12 +74,12 @@ public author: string,
 public level: string,
 public rights: string,
 public uploadDate: string,
-public articleHeader: string,
+public articleHeadline: string,
 public lede: string,
 public bodyCopy: string,
 public link: string,
 public keywords: string[],
-public comments: Article[],
+public comments: string[],
 public upvotes: number,
 public downvotes: number,
 public target: string -->

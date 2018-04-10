@@ -56,6 +56,7 @@ export class EditArticleComponent implements OnInit {
   }
 
   beginUpdatingArticle(articleToUpdate){
+    console.log(articleToUpdate.author)
     this.articleService.updateArticle(articleToUpdate);
   }
 

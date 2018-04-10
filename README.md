@@ -127,7 +127,16 @@ Then I will refactor and make it look pretty.
 
 * Articles can be deleted (Admin level assumed)
 
-* Articles can be updated (Admin level assumed) <--
+* Articles can be updated (Admin level assumed)
+
+* BACK buttons added to Add Article and Update Article <--
+
+* Buttons blank their forms and/or return to top page on Click
+
+* Proper display of Article on pages
+
+**Look into why the stupid thing won't update headlines!**
+**Look into why articles update sometimes adds an article**
 
 * Admin page is working
 

@@ -15,10 +15,10 @@ export class AddArticleComponent implements OnInit {
   ngOnInit() {
   }
 
-  testRouting(emptyArticle){
-    console.log("at least the button works! It's " + emptyArticle);
-    this.articleService.addArticle(this.emptyArticle);
-  }
+  // testRouting(emptyArticle){
+  //   console.log("at least the button works! It's " + emptyArticle);
+  //   this.articleService.addArticle(this.emptyArticle);
+  // }
 
   // passValue(emptyArticle){
   //   console.log("at least the button works! It's " + emptyArticle);

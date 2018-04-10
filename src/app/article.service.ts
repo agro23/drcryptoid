@@ -35,7 +35,8 @@ export class ArticleService {
 
       updateArticle(localUpdatedArticle){
         console.log("got into updateArticle in article `service at least!");
-        var articleEntryInFirebase = this.getArticleById(localUpdatedArticle.$key);
+        console.log(localUpdatedArticle.$key);
+        var articleEntryInFirebase = this.getArticleById(localUpdatedArticle.id);
         articleEntryInFirebase.update({id: localUpdatedArticle.id,
         name: localUpdatedArticle.name,
         author: localUpdatedArticle.author,
@@ -54,6 +55,7 @@ export class ArticleService {
       }
 
       deleteArticle(localArticleToDelete){
+        console.log(localArticleToDelete.$key);
         var articleEntryInFirebase = this.getArticleById(localArticleToDelete.$key);
         articleEntryInFirebase.remove();
       }
