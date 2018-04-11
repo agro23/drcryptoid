@@ -152,43 +152,6 @@ Then I will refactor and make it look pretty.
 
 * CRUD tasks, comments and voting are limited by user Level.
 
-==== OLD STUFF BELOW ====
-* 'Reader' Model created and functional
-
-* 'Reader' component created and functional
-
-* 'Admin' model created and functional
-
-* 'Admin' component created and functional
-
-* 'Forum' model created
-
-* 'Forum' component created and functional
-
-* Hard code Lorem Ipsum blog posts and
-
-* Display blog posts to the top page
-
-* Display articles to the top page
-
-* Create Admin login
-
-* Implement keyword search of articles
-
-. . .
-
-* Implement links to sites like https://www.newsbtc.com/2018/04/05/asian-altcoin-trading-roundup-top-cryptocurrency-ontology/
-
-* Add startedtic price lookup to app.component (1)
-
-* Move static price lookup code to its own component
-
-* Add drop down coin lookup menu
-
-* Pretty up the drop down and related stuff
-
-* Add more coins to lookup
-
 * Pretty up the UI
 
 * Refactor code as needed.
