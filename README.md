@@ -135,7 +135,7 @@ Then I will refactor and make it look pretty.
 
 * Proper display of Article on pages
 
-**Look into why the stupid thing won't update headlines!**
+**Look into why the stupid thing won't update headlines correctly!**
 **Look into why articles update sometimes adds an article**
 
 * Admin page is working
@@ -156,9 +156,9 @@ Then I will refactor and make it look pretty.
 
 * Refactor code as needed.
 
-## Methodology
+## Methodology and Comments
 
-. . .
+I began by trying to adapt the online store lesson from learnhowtoprogram.com and went on from there. In the process I rebuilt my logic from the ground up on more than one occasion. (I even found a bug in Angular where a reserved word as a part of a parameter name included in the constructor of an object renders the argument undefined.)
 
 ## Technologies Used
 
@@ -189,6 +189,8 @@ Then I will refactor and make it look pretty.
 * typescript
 
 ## Setup/Installation Requirements
+* You can find the app online at: https://drcryptoid-23.firebaseapp.com/ 
+**otherwise:**
 * Download the project from the repository https://github.com/agro23/drcryptoid
 * Install and initialize (init -y) Node (if it isn't already)
 * Navigate to your root project directory
@@ -209,7 +211,7 @@ Then I will refactor and make it look pretty.
 * Point your browser to localhost:4200
 
 ## Future expansion
-I'd like to enable forums and maybe separate articles from forum posts. It would be nice to have the crypto widgets working right. I'd also like to be able to add more market data about cryptos and also let users navigate some custom forecasting tools and apply formulae to their chosen crypto. I'd also like to have a "portfolio" section where they can gauge the value of their cryptos and maybe make informed decisions about when to buy and sell. Also, it would be neat if the site could grab articles about cryptocurrencies from the internet periodically and post them to the front page, functionally indistinguishable from blog posts and other linked articles
+I didn't get anywhere near as much done as I would have liked. I need to make sure the entries in the database are correct. Once the database CRUD is stable I can put in real articles, allow comments, and implement upvote/downvote. After that I need to implement user authentication (almost trivial with Google!) so that users and moderators and admin are separate levels. Then the blog is able to be deployed. Belss and whistles come later. I'd like to enable forums and maybe separate articles from forum posts. It would be nice to have the crypto widgets working right. I'd also like to be able to add more market data about cryptos and also let users navigate some custom forecasting tools and apply formulae to their chosen crypto. I'd also like to have a "portfolio" section where they can gauge the value of their cryptos and maybe make informed decisions about when to buy and sell. Also, it would be neat if the site could grab articles about cryptocurrencies from the internet periodically and post them to the front page, functionally indistinguishable from blog posts and other linked articles
 
 ## Known Bugs and Issues
 
